@@ -149,6 +149,7 @@ func wrapper(f func(float64, float64) float64) float64 {
 	return f(3.0, 4.0)
 }
 
+// todo
 // function closure
 // each closure is bound to its own "sum" variable
 func adder() func(int) int {
