@@ -17,14 +17,14 @@ func loop() {
 func loop2() {
 	var sum int = 1
 	// optional omit init and post statements
-	for ; sum < 100; {
+	for sum < 100 {
 		sum += sum
 	}
 	fmt.Println(sum)
 }
 
 func loop3() {
-	var sum = 1;
+	var sum = 1
 	// "while" structure in Go
 	for sum < 100 {
 		sum += sum
@@ -34,7 +34,7 @@ func loop3() {
 
 func loop4() {
 	// forever
-	for{
+	for {
 
 	}
 }
@@ -58,14 +58,16 @@ func ifStatement() {
 
 func switchStatement() {
 	switch a := "gg"; a {
-	case "hh": fmt.Println("NEU")
-	case "gg": fmt.Println("MIT")
+	case "hh":
+		fmt.Println("NEU")
+	case "gg":
+		fmt.Println("MIT")
 	default:
 		fmt.Println("not matched")
 	}
 }
 
-func switchStatementWithFunctionAsCondition()  {
+func switchStatementWithFunctionAsCondition() {
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Wednesday {
@@ -80,7 +82,7 @@ func switchStatementWithFunctionAsCondition()  {
 	}
 }
 
-func switchWithNoCondition()  {
+func switchWithNoCondition() {
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:

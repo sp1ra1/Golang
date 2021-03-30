@@ -4,18 +4,18 @@ import (
 	"fmt"
 )
 
-func holyShit(x int, y int)  int {
-	return x + y;
+func holyShit(x int, y int) int {
+	return x + y
 }
 
 // omit the type from all but the last when two or more consecutive named function parameters
 func holyShitAnotherVersion(x, y int) int {
-	return x + y;
+	return x + y
 }
 
 // multiple return results
 func swap(x, y string) (string, string) {
-	return y, x;
+	return y, x
 }
 
 // Return statement without arguments returns the named return values
@@ -26,7 +26,6 @@ func nakedReturn(sum int) (x, y int) {
 }
 
 var c, python, java bool
-
 
 func main() {
 	fmt.Println(holyShit(1, 2) == holyShitAnotherVersion(2, 1))

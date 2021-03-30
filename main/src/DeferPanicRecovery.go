@@ -25,7 +25,6 @@ func deferRule3() (i int) {
 	return 1
 }
 
-
 func main() {
 	deferRule1()
 	deferRule2()
